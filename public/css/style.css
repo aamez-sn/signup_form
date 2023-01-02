@@ -1,0 +1,14 @@
+h2 {
+  color: black;
+}
+
+.signupButton {
+  background-color: #0096FF;
+  color: white;
+  border: none;
+  width: 15rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

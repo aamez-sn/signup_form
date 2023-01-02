@@ -1,0 +1,10 @@
+html
+    head
+        link(rel='stylesheet', href='/css/style.css')
+    body
+        if data.newsletter
+            h4
+            | Hello #{data.fname} #{data.lname}, Thank you for signing up. Your account is now created. You would be receiving our periodic newsletters to your email: (#{data.email})
+        else
+            h4
+            | Hello #{data.fname} #{data.lname}, Thank you for signing up. Your account is now created.

@@ -1,0 +1,29 @@
+html
+    head
+        link(rel='stylesheet', href='/css/style.css')
+    body
+        h2 Sign up
+        form.product-form(action='/signup', method='POST')
+            div(style='display: flex; flex-direction: row')
+                input#fname(placeholder='First name', type='text', name='fname' required='true')
+                input#lname(style='margin-left: 1rem', placeholder='Last name', type='text', name='lname' required='true')
+            input#email(style='margin-top: 1rem', placeholder='Email', type='email', name='email' required='true')
+            br
+            br
+            input#password(placeholder='Password', type='password', name='password' required='true' minlength="8")
+            div(style='margin-top: 0.5rem; margin-bottom: 0.5rem') At least 8 characters
+            input#phone(placeholder='Phone number', type='number', name='phone')
+            div(style='margin-top: 0.5rem; margin-bottom: 0.5rem') Optional
+            input#newsletter(placeholder='Subscribe to our newsletter', type='checkbox', name='newsletter')
+            label(for='Subscribe to our newsletter') Subscribe to our newsletter
+            br
+            br
+            input.signupButton(type='submit', value='Sign up')
+        p
+            | By clicking signup you agree to our 
+            a(style='text-decoration: none', href='url') terms of service
+
+        if errors
+            ul
+                for error in errors
+                    li!= error.msg
