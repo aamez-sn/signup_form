@@ -1,0 +1,21 @@
+$color_red: red;
+$color_black: black;
+$color_blue: #0096FF;
+$color_white: white;
+$borderNone: none;
+$signup_button_width: 15rem;
+$signup_button_height: 2rem;
+$signup_button_cursor: pointer;
+
+h2 {
+    color: $color_black;
+}
+
+.signupButton {
+    background-color: $color_blue;
+    color: $color_white;
+    border: $borderNone;
+    width: $signup_button_width;
+    height: $signup_button_height;
+    cursor: $signup_button_cursor;
+}
